@@ -344,3 +344,8 @@ footer{
 .modal.modal-on, .dimd.modal-on{
     display: block;
 }
+
+.body.modal-on{
+    height: 100%;
+    overflow: hidden;
+}
