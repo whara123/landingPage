@@ -119,6 +119,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-bottom: 88px;
+    margin-top: 67px;
 }
 
 .txt-middle-cont{
@@ -570,6 +571,7 @@ footer{
     }
     .wrap-mid-text-cont{
         margin-bottom: 40px;
+        margin-top: 0;
     }
 
     .img-item{
