@@ -19,11 +19,13 @@
                 <li><a href="javascript:void(0)">About</a></li>
                 <li><a href="javascript:void(0)">Support</a></li>
                 <li><button type="button" class="btn-download btn">Download</button></li>
+                <button type="button" class="btn-bar-close"></button>
             </ul>
+            <button type="button" class="btn-head-menu-media"></button>
         </nav>
 
-        <h2 class="txt-head-cont">Lorem Ipsum is simply dummy text of the printing and</h2>
-        <p class="txt-item-cont">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+        <h2 class="txt-head-cont">Lorem Ipsum is simply dummy text<br class="media-br"> of the printing and</h2>
+        <p class="txt-item-cont">Lorem Ipsum is simply dummy text<br class="media-br"> of the printing and typesetting industry.<br>
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
         <button type="button" class="btn-download btn">Download</button>
         <img src="./resource/img/고양이 1.png" alt="박스를 뒤집어 쓴 고양이사진" class="img-header-cat">
@@ -36,7 +38,7 @@
             <img src="./resource/img/img_4.png" alt="이불에 누워있는 고양이 사진" class="img-main-cat">
             <div class="wrap-main-txt">
                 <h3 class="txt-main-cont">Lorem Ipsum is simply dummy text of the printing and dummy text </h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <p class="txt-main-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </div>
         </section>
 
@@ -48,15 +50,21 @@
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
             </div>
 
-            <div class="wrap-img-list">
-                <img src="./resource/img/img_1.png" alt="캣타워에 누운 고양이 사진">
-                <img src="./resource/img/img_2.png" alt="콘센트 앞에 앉은 고양이 뒷모습 사진">
-                <img src="./resource/img/img_3.png" alt="콘센트 앞에 앉은 고양이 앞모습 사진">
-            </div>
+            <ul class="wrap-img-list">
+                <li><img src="./resource/img/img_1.png" alt="캣타워에 누운 고양이 사진" class="img-item"></li>
+                <li><img src="./resource/img/img_2.png" alt="콘센트 앞에 앉은 고양이 뒷모습 사진" class="img-item"></li>
+                <li><img src="./resource/img/img_3.png" alt="콘센트 앞에 앉은 고양이 앞모습 사진" class="img-item"></li>
+            </ul>
+
+            <ul class="wrap-img-list media">
+                <li><img src="./resource/img/img_1.png" alt="캣타워에 누운 고양이 사진" class="img-item"></li>
+                <li><img src="./resource/img/img_2.png" alt="콘센트 앞에 앉은 고양이 뒷모습 사진" class="img-item"></li>
+                <li><img src="./resource/img/img_3.png" alt="콘센트 앞에 앉은 고양이 앞모습 사진" class="img-item"></li>
+            </ul>
 
             <div class="wrap-txt-desc">
                 <p class="txt-desc-cont">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown<br class="media-br">
                     Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 <button type="button" class="btn-more btn">Learn More</button>
             </div>
@@ -90,13 +98,23 @@
 
     <footer>
         <div class="wrap-foot-link">
-            <a href="javascript:void(0)" class="link-logo"></a>
-            <ul class="list-sns-cont">
-                <li><a href="javascript:void(0)" class="link-sns blog"></a></li>
-                <li><a href="javascript:void(0)" class="link-sns insta"></a></li>
-                <li><a href="javascript:void(0)" class="link-sns facebook"></a></li>
-                <li><a href="javascript:void(0)" class="link-sns youtube"></a></li>
-            </ul>
+            <div class="wrap-link-sns">
+                <a href="javascript:void(0)" class="link-logo"></a>
+                <ul class="list-sns-cont">
+                    <li><a href="javascript:void(0)" class="link-sns blog"></a></li>
+                    <li><a href="javascript:void(0)" class="link-sns insta"></a></li>
+                    <li><a href="javascript:void(0)" class="link-sns facebook"></a></li>
+                    <li><a href="javascript:void(0)" class="link-sns youtube"></a></li>
+                </ul>
+            </div>
+            <div class="wrap-link-about">
+                <ul class="list-link-about-media">
+                    <li><a href="javascript:void(0)" class="link-about">About</a></li>
+                    <li><a href="javascript:void(0)" class="link-about">Blog</a></li>
+                    <li><a href="javascript:void(0)" class="link-about">Support</a></li>
+                    <li><a href="javascript:void(0)" class="link-about">Terms of Use</a></li>
+                </ul>
+            </div>
         </div>
         <a href="#" class="btn-move-up"></a>
     </footer>

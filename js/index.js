@@ -9,6 +9,41 @@ const bodyScroll = document.querySelector(".body");
 const reg = /[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]$/i;
 
 
+//미디어쿼리일때
+const headMenuOpen = document.querySelector(".btn-head-menu-media");
+const navMenu = document.querySelector(".list-nav-menu");
+const navMenuClose = document.querySelector(".btn-bar-close");
+
+const slider = document.querySelector(".wrap-img-list.media")
+
+const moveSlider = slider.animate([
+
+    {transform: 'translateX(0px)'},
+    {transform: 'translateX(0px)'},
+    {transform: `translateX(${-325}px)`},
+    {transform: `translateX(${-325}px)`},
+
+    ],{
+        duration: 2000,
+    });
+
+moveSlider.onfinish = function(){
+    let firstItem = slider.removeChild(slider.firstElementChild);
+
+    slider.appendChild(firstItem);
+
+    moveSlider.play();
+}
+
+headMenuOpen.addEventListener("click",()=>{
+    navMenu.classList.add("on");
+})
+
+navMenuClose.addEventListener("click",()=>{
+    navMenu.classList.remove("on");
+})
+
+
 subBtn.addEventListener("click",()=>{
     let eMail = inputEmail.value;
     if(eMail.match(reg)!==null){
@@ -25,3 +60,4 @@ modalClose.addEventListener("click",()=>{
     dimd.classList.remove("modal-on");
     bodyScroll.classList.remove("modal-on");
 })
+
