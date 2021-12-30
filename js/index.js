@@ -6,7 +6,7 @@ const inputEmail = document.querySelector(".inp-email");
 const bodyScroll = document.querySelector(".body");
 
 
-const reg = /[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]$/i;
+const reg = /^[a-zA-Z0-9+-\_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i;
 
 
 //미디어쿼리일때
@@ -43,6 +43,7 @@ navMenuClose.addEventListener("click",()=>{
     navMenu.classList.remove("on");
 })
 
+//------------------------------- 
 
 subBtn.addEventListener("click",()=>{
     let eMail = inputEmail.value;
